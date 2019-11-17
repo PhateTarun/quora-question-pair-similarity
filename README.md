@@ -15,9 +15,33 @@ Data Overview
     Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate
     Size of Train.csv - 60MB
     Number of rows in Train.csv = 404,290
+   
+Additional features
 
+    1. common word ratio 
+    2. common first word
+    3. common token ratio
+    4. common stop-word ratio
+    5. absolute difference b/w length of string
+    
+To get advance features form texts we used Fuzzywuuzy. FuzzyWuzzy is a library of Python which is used for string matching. Fuzzy string matching is the process of finding strings that match a given pattern. Basically it uses Levenshtein Distance to calculate the differences between sequences.
+
+    1. fuzzy ratio
+    2. token sort ratio
+    3. token set ratio
+    4. partial ratio
+
+To vectorize text data two text vetorization methods are used
+
+    1. TFIDF
+    2. TFIDF-Word2vec
+ 
 models we used for case study
 
     Logistic Regression
     Linear SVM
     XGboost
+    
+Metric used for the evaluation of model is Log-loss
+
+
